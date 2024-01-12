@@ -9,7 +9,7 @@
     <h1>Selector in jQuery</h1>
     <p>Element Selctor</p>
     <button class="btnclass">Class selector</button>
-    <button class="btnID">ID selector</button>
+    <button id="btnID">ID selector</button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -33,13 +33,13 @@
 
             // Class Selector
 
-            $('btnclass').click(function(){
+            $('.btnclass').click(function(){
                 console.log('Class selector');
             });
 
             // ID selector
 
-            $('btnID').click(function(){
+            $('#btnID').click(function(){
                 console.log('ID selector');
             });
 

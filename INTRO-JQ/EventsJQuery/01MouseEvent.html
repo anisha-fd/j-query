@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event in jQuery</title>
+</head>
+<body>
+    <h1>Mouse Event in jQuery</h1>
+
+    <hr/>
+    <div class="box">Mouse magic in jQuery is here</div>
+
+    <!-- jQuery cdn link  -->
+    <script src="../../JQ-link/jquery-3.7.1.min.js"></script>
+
+    <script>
+       $("body").css({
+        backgroundColor:"tan",
+        textAlign: "center",
+       });
+
+       $("h1").css({
+        fontSize:"50px",
+        color:"red",
+       });
+
+       $(".box").css({
+          color:"blue",
+          fontSize:"30px",
+          backgroundColor:"black",
+          height:"400px",
+          borderRadius:"400px",
+
+       });
+      </script>
+
+
+<script>
+    $(document).ready(function(){
+
+        // $(".box").click(function () {
+        //   $(".box").css({backgroundColor: 'teal', color: 'khaki'});
+        // });
+
+        // Double Click
+
+        $(".box").dblclick(function () {
+          $(".box").css({backgroundColor: 'crimson', color: 'white'});
+
+        });
+
+
+        $(".box").mouseenter(function(){
+            $(".box").css({backgroundColor:"red",color:"white"});
+        })
+
+        $(".box").mouseleave(function(){
+            $(".box").css({backgroundColor:"blue",color:"crim"});
+        })
+
+        $("box").mousemove(function(){
+          $(".box").css({backgroundColor:"brown",color:"red"});
+        });
+
+
+    })
+
+</script>
+
+<!-- $("body").css({
+  backgroundColor: "tan",
+  textAlign: "center",
+});
+$("h1").css({
+  fontSize: "50px",
+  color: "brown",
+});
+$("button").css({
+  fontSize: "20px",
+  color: "khaki",
+  backgroundColor: "brown",
+  padding: "10px 30px",
+  borderRadius: "20px",
+});
+$(".box").css({
+  fontSize: "30px",
+  color: "white",
+  backgroundColor: "blueviolet",
+  padding: "10px 30px",
+  margin: "10px 30px",
+  borderRadius: "20px",
+  height: "200px",
+}); -->
+    
+</body>
+</html>

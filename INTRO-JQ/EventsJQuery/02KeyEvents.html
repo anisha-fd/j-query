@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Events in jquery</title>
+</head>
+<body>
+    <h1>key Events in jQuery</h1>
+    <hr>
+    <input type="text">
+    <hr>
+    <div class="box">This is magic of key Events of jquery</div>
+
+    <!-- jQuery cdn link -->
+    <script src="../../JQ-link/jquery-3.7.1.min.js"></script>
+    <script>
+        $("body").css({
+            
+            backgroundColor:"pink",
+            textAlign:"center",
+        });
+        $("h1").css({
+            color:"red",
+            fontSize:"50px",
+        });
+        $(".box").css({
+            fontSize:"30px",
+            color:"white",
+            backgroundColor:"black",
+            padding:"10px 30px",
+            borderRadius:"20px",
+            height:"200px",
+        });
+    </script>
+
+
+<script>
+    $(document).ready(function(){
+         
+        // key down
+
+        $("input").keydown(function(){
+            $("box").css({backgroundColor:"teal",color:"brown"});
+        });
+
+        // key up
+
+        $("input").keyup(function(){
+            $("box").css({backgroundColor:"crimson", color:"white"});
+        });
+
+    });
+</script>
+    
+</body>
+</html>

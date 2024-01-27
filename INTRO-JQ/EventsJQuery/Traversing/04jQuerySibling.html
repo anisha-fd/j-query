@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> sibling jquery</title>
+</head>
+<body>
+    <div class="great-grand-parent">
+        great-grand-parent
+        <div class="grand-parent">
+            grand-parent
+            <div class="parent">
+               <div class="child">one</div>
+               <div class="child">two</div>
+            </div>
+            <div class="parent">
+                <div class="child">one</div>
+                <div class="child">two</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../../JQ-link/jquery-3.7.1.min.js"> </script>
+    <script>
+        $("*").css({
+            backgroundColor:"pink",
+            textAlign:"center",
+            margin:"20px",
+            fontSize:"30px"
+
+        });
+    </script>
+<script>
+    $(document).ready(function () {
+
+
+      // siblings 
+      
+      $(".child").siblings().css({ border: "3px solid red"});
+      $(".parent").siblings().css({ border: "3px solid blue"});
+    
+
+      
+
+
+   
+     
+    });
+  </script>
+
+    
+</body>
+</html>

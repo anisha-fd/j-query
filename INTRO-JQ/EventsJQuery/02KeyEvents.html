@@ -8,7 +8,7 @@
 <body>
     <h1>key Events in jQuery</h1>
     <hr>
-    <input type="text">
+    <button>click</button>
     <hr>
     <div class="box">This is magic of key Events of jquery</div>
 
@@ -32,6 +32,13 @@
             borderRadius:"20px",
             height:"200px",
         });
+        $("button").css({
+            height:"30px",
+            width:"80px",
+            backgroundColor:"green",
+            color:"white",
+            fontSize:"20px",
+        });
     </script>
 
 
@@ -40,14 +47,14 @@
          
         // key down
 
-        $("input").keydown(function(){
-            $("box").css({backgroundColor:"teal",color:"brown"});
+        $("button").keydown(function(){
+            $(".box").css({backgroundColor:"teal",color:"brown"});
         });
 
         // key up
 
-        $("input").keyup(function(){
-            $("box").css({backgroundColor:"crimson", color:"white"});
+        $("button").keyup(function(){
+            $(".box").css({backgroundColor:"crimson", color:"white"});
         });
 
     });
